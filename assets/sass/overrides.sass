@@ -1,0 +1,188 @@
+
+// RETREAT SLIDER    
+.vueperslides
+
+    &__parallax-wrapper
+      padding-bottom: 60% !important  
+
+      @include respond(tab-land) 
+        padding-bottom: 75% !important  
+
+      @include respond(tab-middle) 
+        padding-bottom: 120% !important
+
+      @include respond(tab-port) 
+        padding-bottom: 130% !important
+
+      @include respond(tab-small) 
+        padding-bottom: 150% !important
+
+      @include respond(phone) 
+        padding-bottom: 180% !important
+
+      @include respond(phone-small) 
+        padding-bottom: 220% !important
+      @include respond(phone-tiny) 
+        padding-bottom: 260% !important
+    //padding: -1rem
+    &__bullets
+      bottom: 7.5rem !important
+    &__arrow
+      opacity: .4 !important
+      &:hover
+        opacity: .7 !important
+      & svg
+        fill: $color-white !important
+        height: 5rem !important
+        width: 5rem !important
+
+      &--prev
+        left: 1rem !important
+
+        @include respond(tab-port) 
+          display: none !important
+
+      &--next
+        right: 1rem !important
+
+        @include respond(tab-port) 
+          display: none !important
+.vueperslide
+    box-shadow: none
+    &__title
+        @extend .heading-secondary-smaller--white
+        margin-bottom: 1.5rem
+        word-wrap: break-word
+        white-space: initial
+        //padding: 0 1rem
+    &__content
+        @extend .paragraph-primary--white
+        align-self: flex-end
+        //padding: 0 1rem
+      
+    
+
+
+// MAIN SLIDER
+.agile
+
+  &__slide
+
+  &__nav-button
+    background: transparent
+    border: none
+    color: $color-white
+    cursor: pointer
+    font-size: 2.4rem
+    height: 100vh
+    position: absolute
+    top: 0
+    transition-duration: .3s
+    width: 8rem
+
+    // @media qu
+    //   font-size: 50%
+
+    &:hover
+      background-color: rgba($color-black, .3)
+      opacity: 1
+
+    &:hover .agile__nav-icon
+      opacity: .7
+
+    &--prev
+      left: 0
+
+    &--next
+      right: 0
+
+  &__nav-icon
+    opacity: .4
+    fill: $color-white
+
+  &__dots
+    bottom: 3rem
+    left: 50%
+    position: absolute
+    transform: translateX(-50%)
+
+  &__dot
+    margin: 0 1rem
+
+    button 
+      background-color: transparent
+      border: 1px solid $color-white
+      border-radius: 50%
+      cursor: pointer
+      display: block
+      height: 1rem
+      font-size: 0
+      line-height: 0
+      margin: 0
+      padding: 0
+      transition-duration: .3s
+      width: 1rem
+
+    &--current,
+    &:hover
+      button
+        background-color: $color-white
+
+  &--fade
+    //background-color: rgba($color-secondary, .1)
+    background: linear-gradient( to right, rgba($color-primary-lighter, .3), rgba($color-primary, .3) 40%, rgba($color-primary-darker, .3))
+
+
+  // PARALLAX
+  
+// .Masthead 
+//   width: 100%
+
+
+// REVIEW CAROUSEL
+.VueCarousel-inner
+    //flex: 0 1 500px !important    
+.VueCarousel-dot
+    background-color: rgba($color-primary-additional, .7) !important
+    border: 1px solid $color-border-dark !important
+    width: 1.2rem !important
+    height: 1.2rem !important
+    box-sizing: border-box !important
+    background-clip: border-box !important
+    margin: 0 .5rem
+    padding: 0 !important
+    transition: .3s
+    opacity: .3
+
+    &:focus
+        outline: none !important
+
+    // &:hover
+    //     opacity: 1
+    &--active, &:hover
+        opacity: 1
+        background-color: white !important
+        border: 1px solid $color-border-dark !important
+
+// FOOTER SLIDER
+.hooper-indicator
+  width: .7rem
+  height: .7rem
+  border-radius: 50%
+  margin: 0 .6rem
+  background-color: $color-white
+  opacity: .3
+  outline: none
+  transition: .3s
+  &:active, &:hover, &:focus, &.is-active
+    opacity: 1
+    outline: none
+    border: none
+    background-color: $color-white
+
+
+.hooper
+  height: auto
+  &:focus
+    outline: none
+    border: none

@@ -1,0 +1,141 @@
+@keyframes moveInLeft 
+    0% 
+        opacity: 0
+        transform: translateX(-10rem)
+    
+    80% 
+        transform: translateX(1rem)
+    
+    100% 
+        opacity: 1
+        transform: translate(0)
+
+.animate-left
+    animation: moveInLeft 1s ease-out .5s
+    animation-fill-mode: backwards
+    
+@keyframes moveInRight 
+    0% 
+        opacity: 0
+        transform: translateX(10rem)
+    
+    80% 
+        transform: translateX(-1rem)
+    
+    100% 
+        opacity: 1
+        transform: translate(0)
+
+.animate-right
+    animation: moveInRight 1s ease-out .5s
+    animation-fill-mode: backwards
+
+@keyframes appearRight 
+    0% 
+        opacity: 0
+        transform: translateX(50%)
+    
+    100% 
+        opacity: 1
+        transform: translate(0)
+
+.animate-appear-right
+    animation: appearRight 1s ease-out .5s
+    animation-fill-mode: backwards
+
+@keyframes moveInBottom 
+    0% 
+        opacity: 0
+        transform: translate(-50%, 3rem)
+    
+    100% 
+        opacity: 1
+        transform: translate(-50%, 0)
+
+.animate-bottom
+    animation: moveInBottom 1s ease-out 1.25s
+    animation-fill-mode: backwards
+
+@keyframes fadeIn 
+    0% 
+        opacity: 0
+    
+    100% 
+        opacity: 1
+
+.animate-fade
+    animation: fadeIn 1s ease-out 1.25s
+    animation-fill-mode: backwards
+
+
+.animate-fade-fast 
+    animation: fadeIn .5s ease-out .5s
+    animation-fill-mode: backwards
+    
+@keyframes ticker-kf 
+    0% 
+        transform: translate3d(0, 0, 0)
+
+    100% 
+        transform: translate3d(calc(-200vw + 2.5rem), 0, 0)
+        
+@keyframes ticker-kf-reversed
+    0% 
+        transform: translate3d(0, 0, 0)
+
+    100% 
+        transform: translate3d(calc(200vw - 2.5rem), 0, 0)
+
+
+.animate-fade-1
+    animation: fadeIn .5s ease-in-out .3s
+    animation-fill-mode: backwards
+    @include respond(tab-land)
+        animation: fadeIn .5s ease-in-out .3s
+
+.animate-fade-2
+    animation: fadeIn .5s ease-in-out .6s
+    animation-fill-mode: backwards
+    @include respond(tab-land)
+        animation: fadeIn .5s ease-in-out .3s
+
+.animate-fade-3
+    animation: fadeIn .5s ease-out .9s
+    animation-fill-mode: backwards
+    @include respond(tab-land)
+        animation: fadeIn .5s ease-in-out .3s
+
+.animate-fade-slow-1
+    animation: fadeIn .8s ease-in-out .3s
+    animation-fill-mode: backwards
+    @include respond(tab-land)
+        animation: fadeIn .5s ease-in-out .3s
+
+.animate-fade-slow-2
+    animation: fadeIn .8s ease-out .7s
+    animation-fill-mode: backwards
+    @include respond(tab-land)
+        animation: fadeIn .5s ease-in-out .3s
+        
+.animate-fade-slow-3
+    animation: fadeIn .8s ease-out 1.1s
+    animation-fill-mode: backwards
+    @include respond(tab-land)
+        animation: fadeIn .5s ease-in-out .3s
+
+// SLIDE TRANSITION   
+.slide-enter-active 
+   transition-duration: 0.3s
+   transition-timing-function: ease-in
+
+.slide-leave-active 
+   transition-duration: 0.3s
+   transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+
+.slide-enter-to, .slide-leave
+   max-height: 100vh
+   overflow: hidden
+
+.slide-enter, .slide-leave-to 
+   overflow: hidden
+   max-height: 0

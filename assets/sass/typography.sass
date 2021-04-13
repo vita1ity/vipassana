@@ -1,0 +1,182 @@
+.heading-primary
+    color: $color-text
+    font-family: Ubuntu, Helvetica, sans-serif
+    font-size: 4.5rem
+    letter-spacing: 1.1rem
+    text-transform: uppercase
+    white-space: nowrap
+
+    @include respond(phone) 
+        letter-spacing: .7rem
+        font-size: 3.5rem
+        
+    @include respond(big-desktop) 
+        letter-spacing: 1.1rem
+        font-size: 5.5rem
+
+.heading-secondary
+    color: $color-text
+    font-family: Vera Crouz, sans-serif
+    font-size: 5.5rem
+    letter-spacing: 1rem
+    white-space: normal
+    text-align: center
+
+    @include respond(phone) 
+        letter-spacing: .5rem
+        font-size: 4.5rem
+
+.heading-secondary-smaller
+    color: $color-primary-darker
+    font-family: Vera Crouz, sans-serif
+    font-size: 2.8rem
+    letter-spacing: 1px
+    //white-space: nowrap
+    text-align: center
+    word-wrap: break-word
+    white-space: initial
+    display: block
+    &--white
+        @extend .heading-secondary-smaller
+        color: $color-white
+        font-size: 2.6rem
+        letter-spacing: 3px
+.heading-tertiary
+    color: $color-title-dark
+    font-family: Arial, sans-serif
+    font-size: 2.8rem
+    text-transform: uppercase
+    letter-spacing: 1px
+    white-space: normal
+    text-align: center
+.heading-fourth
+    color: $color-primary
+    font-family: Arial, sans-serif
+    font-size: 2.5rem
+    line-height: 3.2rem
+    letter-spacing: 1px
+    white-space: normal
+
+    @include respond(tab-port)
+        font-size: 2.3rem
+        line-height: 3.0rem
+    &--white
+        @extend .heading-fourth
+        color: $color-white
+
+    &--modal
+        @extend .heading-fourth
+        color: $color-title-dark
+        font-weight: bold
+.heading-fifth
+    color: $color-title-dark
+    font-family: Arial, sans-serif
+    font-size: 2rem
+    letter-spacing: 1px
+    white-space: nowrap
+    text-transform: uppercase
+
+    @include respond(tab-port)
+        text-align: center
+
+    &--light
+        @extend .heading-fifth
+        color: $color-text
+        font-size: 1.8rem
+
+.paragraph-primary
+    color: $color-text-dark
+    font-family: Arial, sans-serif
+    font-size: 1.8rem
+    letter-spacing: 1px
+    text-align: justify
+    line-height: 2.8rem
+
+    &--no-wrap
+        @extend .paragraph-primary
+        white-space: nowrap
+
+    &--success
+        @extend .paragraph-primary
+        color: $color-success
+        animation: fadeIn 1s ease-out
+
+    &--error
+        @extend .paragraph-primary
+        color: $color-error
+        animation: fadeIn 1s ease-out
+
+    &--white
+        @extend .paragraph-primary
+        color: $color-white       
+
+    &--italic
+        @extend .paragraph-primary
+        font-style: italic
+
+    &--modal
+        @extend .paragraph-primary
+        font-style: italic
+        color: $color-primary
+
+    &--left
+        @extend .paragraph-primary
+        text-align: left
+
+    @include respond(tab-port)
+        font-size: 1.6rem
+        text-align: left
+        //line-height: 2rem
+    @include respond(phone)
+        text-align: left
+
+.paragraph-primary2
+    color: $color-text-dark
+    font-family: Arial, sans-serif
+    font-size: 1.8rem
+    letter-spacing: 1px
+    line-height: 2.8rem
+.paragraph-tertiary 
+    color: $color-text
+    font-family: Ubuntu, sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    letter-spacing: 1px
+
+    &--bigger
+        @extend .paragraph-tertiary
+        font-size: 2.5rem
+        text-align: center    
+
+    @include respond(tab-land) 
+        //letter-spacing: .5px
+        font-size: 1.4rem
+
+    @include respond(tab-port) 
+        //letter-spacing: .5px
+        font-size: 2.5rem
+.paragraph-fourth 
+    color: $color-text
+    font-family: Ubuntu, sans-serif
+    font-weight: 600
+    font-size: 1.6rem
+    letter-spacing: 1px
+
+.paragraph-small
+    color: $color-text-dark
+    font-family: Arial, sans-serif
+    font-size: 1.5rem
+    letter-spacing: 1px
+    font-weight: bold
+
+    &--italic
+        @extend .paragraph-small
+        font-weight: normal
+        font-style: italic
+
+    &--white
+        @extend .paragraph-small
+        color: $color-text
+        font-size: 1.6rem
+        font-weight: normal
+
