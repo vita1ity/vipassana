@@ -23,6 +23,7 @@
     "vue-parallaxy": "^1.1.1",
     "vue-scrollto": "^2.20.0",
     "vue-slick-carousel": "^1.0.6",
+    "vue-spinner": "^1.0.4",
     "vueperslides": "^2.13.0"
   },
   "devDependencies": {

@@ -15,6 +15,10 @@
                 <img src="~/static/images/teachers/vika.jpg" alt="Victoria Feer" class="teacher__img">
                 <p class="paragraph-small">{{ $t('teacher.vika') }}</p>
             </div>
+            <div class="teacher" @click="modalOpened = 'yulya'" v-animate-onscroll="'animate-fade-slow-4'">
+                <img src="~/static/images/teachers/yulya.jpg" alt="Yulia Kalynovska" class="teacher__img">
+                <p class="paragraph-small">{{ $t('teacher.yulya') }}</p>
+            </div>
         </div>
 
         <TeacherModals @emitCloseModal="closeModal" :modalOpened="modalOpened" />
@@ -46,11 +50,13 @@ export default {
 .teachers
     grid-column: center-start / center-end
     margin-bottom: $margin-btm-container
+    margin-top: 12.5rem
 
     @include respond(tab-port)
         flex-direction: column
         align-items: center
         margin-bottom: $margin-btm-container-mobile
+        margin-top: 2.5rem
 
     &__container 
         display: flex
@@ -71,10 +77,14 @@ export default {
     flex-direction: column
     align-items: center
     border-radius: 1rem
+    margin-bottom: 5rem
 
+    opacity: 0
     transition: .5s
 
     &:not(:last-child)
+        //margin-right: 2rem
+
         @include respond(tab-port)
             margin-bottom: 8rem
 
@@ -84,8 +94,8 @@ export default {
         cursor: pointer
     
     &__img
-        width: 15vw
-        height: 15vw
+        width: 13.5vw
+        height: 13.5vw
         object-fit: cover
         margin-bottom: 1.7rem
 

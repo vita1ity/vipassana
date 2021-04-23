@@ -1,6 +1,6 @@
 <template>
     <div class="teacher-modal">
-        <img :src="require(`~/static/images/teachers/${img}`)" alt="Oleg Vasilev" class="teacher-modal__img margin-bottom-medium ">
+        <img :src="require(`~/static/images/teachers/${img}`)" alt="Teacher Image" class="teacher-modal__img margin-bottom-medium ">
         <h4 class="heading-fourth--modal margin-bottom-small">{{ name }}</h4>
         <p class="paragraph-primary--modal margin-bottom-big">{{ subtitle }}</p>
         <p class="paragraph-primary margin-bottom-big" v-html="text"></p>

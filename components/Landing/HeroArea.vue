@@ -2,7 +2,7 @@
     <div class="hero-area">
 
     <!-- CAROUSEL -->
-    <client-only placeholder="Loading...">
+    <client-only>
      <agile :initial-slide="0" :autoplay="true" :autoplay-speed="5000" :speed="2500" fade :pauseOnHover="false" :options="sliderOptions">
       <HeroSlide img="buddha2000X1333.jpg" imgMob="buddha500X333.jpg"/>
       <HeroSlide img="mountains2000X1333.jpg" imgMob="mountains500X333.jpg"/>
@@ -27,8 +27,8 @@
           <OumLogo class="hero-area__logo"/>
           <div class="hero-area__line"></div>
       </div>
-      <h1 class="heading-primary margin-bottom-medium animate-right">{{ $t('title') }}</h1>
-      <h2 class="heading-secondary animate-fade">{{ $t('subtitle') }}</h2>
+      <h1 class="not-visible heading-primary margin-bottom-medium animate-right">{{ $t('title') }}</h1>
+      <h2 class="not-visible heading-secondary animate-fade">{{ $t('subtitle') }}</h2>
 
     </div>
 
@@ -120,6 +120,8 @@ export default {
       align-items: center
       margin-bottom: 3.8rem
 
+      opacity: 0
+
   &__line
       width: 12rem
       height: .4rem
@@ -145,5 +147,8 @@ export default {
     justify-content: center
     text-decoration: none
     //transform: translateX(-50%)
+
+    //opacity: 0
+
 
 </style>

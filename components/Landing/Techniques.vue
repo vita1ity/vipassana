@@ -139,20 +139,35 @@ export default {
 
   &--1
     grid-column: 1 / span 2
+
+    @include respond(tab-land)
+      grid-row: 1 / span 1
   
   &--2
     grid-column: 3 / span 2
 
+    @include respond(tab-land)
+      grid-row: 2 / span 1
+
   &--3
     grid-column: 5 / span 2
+
+    @include respond(tab-land)
+      grid-row: 3 / span 1
 
   &--4
     grid-column: 2 / span 2
     grid-row: 2 / span 1
 
+    @include respond(tab-land)
+      grid-row: 4 / span 1
+
   &--5
     grid-column: 4 / span 2
     grid-row: 2 / span 1
+
+    @include respond(tab-land)
+      grid-row: 5 / span 1
 
   @include respond(tab-land)
     grid-column: 1 / span 6
@@ -164,6 +179,7 @@ export default {
     height: 6rem
     margin-bottom: 4rem
     position: relative
+    opacity: 0
 
   &__icon
     height: inherit

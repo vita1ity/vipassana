@@ -46,7 +46,7 @@ export default {
     [
       'nuxt-i18n',
       {
-        defaultLocale: 'ua',
+        defaultLocale: 'ru',
         seo: true,
         locales: [
           {

@@ -30,15 +30,15 @@ export default {
             activities: [
                 {
                     index: 1,
-                    time: "06:00 - 06:30",
+                    time: "05:30",
                 },
                 {
                     index: 2,
-                    time: "06:30 - 07:30",
+                    time: "06:00 - 08:00",
                 },
                 {
                     index: 3,
-                    time: "07:45 - 09:30",
+                    time: "08:00 - 10:00",
                 },
                 {
                     index: 4,
@@ -46,11 +46,11 @@ export default {
                 },
                 {
                     index: 5,
-                    time: "11:00 - 12:00",
+                    time: "11:00 - 12:30",
                 },
                 {
                     index: 6,
-                    time: "12:00 - 14:00",
+                    time: "12:30 - 14:00",
                 },
                 {
                     index: 7,
@@ -78,11 +78,15 @@ export default {
                 },
                 {
                     index: 13,
-                    time: "20:00 - 22:00",
+                    time: "20:00 - 20:30",
                 },
                 {
                     index: 14,
-                    time: "22:00 - 06:00",
+                    time: "20:30 - 21:00",
+                },
+                {
+                    index: 15,
+                    time: "21:00 - 05:30",
                 },
 
 

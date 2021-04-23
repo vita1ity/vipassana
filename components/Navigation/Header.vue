@@ -4,7 +4,7 @@
                  :fixedClass="'header__fixed'"
                  >
 
-        <div class="header">
+        <div class="header animate-top">
             <!-- <nuxt-link to="/" class="logo ">
                 <img src="~/assets/icons/oum-logo-image.png" class="logo__img animate-fade" alt="Oum Logo"> 
             -->
@@ -223,6 +223,8 @@ export default {
 </script>
 <style lang="sass" scoped>
     .header
+        opacity: 0
+        transition: .5s
         &__sticky
             //background-color: rgba($color-primary, .64)
             background: linear-gradient( to right, rgba($color-primary-lighter, .7), rgba($color-primary, .7) 40%, rgba($color-primary-darker, .7)) 
@@ -264,6 +266,8 @@ export default {
 
         &__img
             height: 100%
+            width: auto
+            opacity: 0
 
     .navigation
 
@@ -332,9 +336,13 @@ export default {
             border-radius: 50%
             border: .2rem solid transparent
             transition: .3s
-            box-sizing: content-box
-            padding: .2rem
+            //padding: .2rem
             opacity: .8
+            width: 2.5rem
+            height: 2.5rem
+            display: flex
+            align-items: center
+            justify-content: center
 
             &:hover, &--active
                 border: .2rem solid $color-text

@@ -55,7 +55,7 @@ export default {
     justify-content: flex-start
     align-items: center
     padding: 6rem 13.5rem
-    margin: 12.5rem 0 $margin-btm-container 0
+    margin-bottom: $margin-btm-container
 
     border-top-left-radius: 1rem
     border-bottom-left-radius: 1rem
@@ -66,7 +66,7 @@ export default {
     
     @include respond(tab-middle) 
         grid-column: full-start / full-end
-        margin: 5rem 0 $margin-btm-container-mobile 0
+        margin-bottom: $margin-btm-container-mobile
         padding: 6rem
         justify-content: center
 

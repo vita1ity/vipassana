@@ -45,6 +45,21 @@
                         />
         </template>
     </Modal>
+    <Modal v-show="modalOpened === 'yulya'" 
+        @close="closeModal" 
+        title=""
+        >
+        <template slot="body">
+            <TeacherModalBody img="yulya.jpg" 
+                            :name="$t('teacher.yulya')" 
+                            :subtitle="$t('teacher.yulya.subtitle')" 
+                            :text="$t('teacher.yulya.text')"
+                            :telegram="olegTelegram"
+                            :viber="olegViber"
+                            :fb="olegFb" 
+                        />
+        </template>
+    </Modal>
 </div>
     
 </template>
@@ -69,6 +84,9 @@ export default {
             vikaTelegram: '',
             vikaViber: '',
             vikaFb: '',
+            yulyaTelegram: '',
+            yulyaViber: '',
+            yulyaFb: '',
         }
     },
     methods: {

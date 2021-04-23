@@ -7,7 +7,6 @@
             :class="{ 'img-ticker__animation--reversed': reversed,
                         'img-ticker__animation': !reversed}">
 
-
             <!-- Original set of images -->
             <div v-for="img in images" :key="img" class="img-ticker__img-box">
                 <img class="img-ticker__img" :src="require(`~/static/images/gallery/${img}.jpg`)">
@@ -36,7 +35,6 @@ export default {
     
     width: 100%
     margin-bottom: 7.5rem
-
 
     &__animation
         animation: ticker-kf 16s linear infinite

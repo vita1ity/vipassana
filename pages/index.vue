@@ -12,6 +12,8 @@
     <div class="grid--gradient">
       <Techniques id="program"/>
 
+      <Results/>
+
       <Schedule />
     </div>
   
@@ -19,7 +21,7 @@
     
     <Gallery id="gallery"/>
   
-    <Results/>
+    
       
     <Teachers id="teachers"/>
     

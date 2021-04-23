@@ -2,7 +2,14 @@
     <!-- <div class="slide" :style='cssProps'> -->
         
     <parallax class="slide agile__slide" :speed-factor=".3">
-        <img :src="require('@/static/images/hero/' + img)" alt="Slide Background" class="slide-background">
+        <img :src="require('@/static/images/hero/' + img)" 
+            alt="Slide Background" 
+            class="slide-background"
+            @load="onLoaded"
+            v-show="loaded"
+        >
+        <pulse-loader :loading="!loaded" class="spinner" :color="color"></pulse-loader>
+
             <!-- <img :srcset="`require('@/static/images/hero/${img}') 500w, require('@/static/images/hero/${imgMob}') 2000w`" 
                 sizes="100vw"
                 alt="Slide Background" 
@@ -18,12 +25,21 @@
 </template>
 <script>
 import Parallax from 'vue-parallaxy'
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
+
 export default {
     props: [
         'img', 'imgMob'
     ],
     components: {
-      Parallax
+      Parallax,
+      PulseLoader
+    },
+    data() {
+        return {
+            loaded: false,
+            color: '#5131EC'
+        }
     },
     computed: {
         cssProps() {
@@ -36,6 +52,11 @@ export default {
         }
         
     },
+    methods: {
+        onLoaded() {
+            this.loaded = true
+        }
+    }
 
 }
 </script>
@@ -55,5 +76,13 @@ export default {
     width: 100%
     position: relative
 
+.spinner
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: $color-primary !important
+    fill: $color-primary
+    //background-color: rgba($color-white, .3)
     
 </style>
