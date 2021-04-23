@@ -2,7 +2,7 @@ import i18n from './config/i18n'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -35,6 +35,7 @@ export default {
     { src: '~/plugins/jarallax.js', mode: 'client' },
     { src: '~/plugins/directives.js', mode: 'client' },
     { src: '~/plugins/parallax.js', mode: 'client' },
+    { src: '~/plugins/amplify.js', mode: 'client' },
     
   ],
 
