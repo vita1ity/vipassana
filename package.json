@@ -9,8 +9,6 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "aws-amplify": "^3.3.27",
-    "aws-amplify-vue": "^2.1.5",
     "core-js": "^3.8.3",
     "emailjs-com": "^2.6.4",
     "hooper": "^0.3.4",

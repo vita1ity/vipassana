@@ -1,6 +1,6 @@
 <template>
     <div class="techniques">
-      <div class="card animate-fade-fast card--1">
+      <div class="card card--1">
         <div class="card__info">
           
           <div class="card__icon-box" v-animate-onscroll="'animate-fade-1'">
@@ -15,7 +15,7 @@
             {{$t('techniques.more')}} 
             <ArrowUpRight class="card__arrow"/></a>
       </div>
-      <div class="card animate-fade-fast card--2">
+      <div class="card card--2">
         <div class="card__info">
           
           <div class="card__icon-box" v-animate-onscroll="'animate-fade-2'">
@@ -30,7 +30,7 @@
             {{$t('techniques.more')}} 
             <ArrowUpRight class="card__arrow"/></a>
       </div>
-      <div class="card animate-fade-fast card--3">
+      <div class="card card--3">
         <div class="card__info">
           <div class="card__icon-box" v-animate-onscroll="'animate-fade-3'">
             <PranayamIcon class="card__icon"/>
@@ -45,7 +45,7 @@
             {{$t('techniques.more')}} 
             <ArrowUpRight class="card__arrow"/></a>
       </div>
-      <div class="card animate-fade-fast card--4">
+      <div class="card card--4">
         <div class="card__info">
           
           <div class="card__icon-box" v-animate-onscroll="'animate-fade-1'"> 
@@ -60,7 +60,7 @@
             {{$t('techniques.more')}} 
             <ArrowUpRight class="card__arrow"/></a>
       </div>
-      <div class="card animate-fade-fast card--5">
+      <div class="card card--5">
         <div class="card__info">
           
           <div class="card__icon-box" v-animate-onscroll="'animate-fade-2'">

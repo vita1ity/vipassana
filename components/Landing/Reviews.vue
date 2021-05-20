@@ -11,36 +11,16 @@
                 :per-page="1" 
                 :mouse-drag="false" 
                 easing="ease"
+                :adjustableHeight="true"
+                adjustableHeightEasing="ease"
                 >
-            <slide class="carousel__slide">
+            <slide class="carousel__slide" v-for="slide in slides" :key="slide.id">
                 <div class="review">
-                    <img src="~/static/images/review-photo.jpg" alt="" class="review__photo">
+                    <img :src="slide.image" alt="" class="review__photo">
                     <div class="review__textbox">
-                        <h5 class="heading-fifth margin-bottom-smaller">{{$t('reviews.title1')}}</h5>
-                        <p class="paragraph-primary margin-bottom-small">{{$t('reviews.text1')}}</p>
-                        <span class="heading-secondary-smaller text-align-right">{{$t('reviews.name1')}}</span>
-                    </div>
-                    
-                </div>
-            </slide>
-            <slide>
-                <div class="review">
-                    <img src="~/static/images/review-photo.jpg" alt="" class="review__photo">
-                    <div class="review__textbox">
-                        <h5 class="heading-fifth margin-bottom-smaller">{{$t('reviews.title2')}}</h5>
-                        <p class="paragraph-primary margin-bottom-small">{{$t('reviews.text2')}}</p>
-                        <span class="heading-secondary-smaller text-align-right">{{$t('reviews.name2')}}</span>
-                    </div>
-                    
-                </div>
-            </slide>
-            <slide>
-                <div class="review">
-                    <img src="~/static/images/review-photo.jpg" alt="" class="review__photo">
-                    <div class="review__textbox">
-                        <h5 class="heading-fifth margin-bottom-smaller">{{$t('reviews.title3')}}</h5>
-                        <p class="paragraph-primary margin-bottom-small">{{$t('reviews.text3')}}</p>
-                        <span class="heading-secondary-smaller text-align-right">{{$t('reviews.name3')}}</span>
+                        <h5 class="heading-fifth margin-bottom-smaller" v-html="slide.title"></h5>
+                        <p class="paragraph-primary margin-bottom-small" v-html="slide.text"></p>
+                        <span class="heading-secondary-smaller text-align-right">{{ slide.name }}</span>
                     </div>
                     
                 </div>
@@ -52,7 +32,68 @@
 
 
 export default {
-    
+    data() {
+        return {
+            slides: [
+                {
+                    id: 1,
+                    img: 'review1.jpg',
+                    image: require('@/static/images/reviews/review1.jpg'),
+                    title: this.$t('reviews.title1'),
+                    text: this.$t('reviews.text1'),
+                    name: this.$t('reviews.name1')
+                },
+                {
+                    id: 2,
+                    img: 'review2.jpg',
+                    image: require('@/static/images/reviews/review2.jpg'),
+                    title: this.$t('reviews.title2'),
+                    text: this.$t('reviews.text2'),
+                    name: this.$t('reviews.name2')
+                },
+                {
+                    id: 3,
+                    img: 'review3.jpg',
+                    image: require('@/static/images/reviews/review3.jpeg'),
+                    title: this.$t('reviews.title3'),
+                    text: this.$t('reviews.text3'),
+                    name: this.$t('reviews.name3')
+                },
+                {
+                    id: 4,
+                    img: 'review4.jpg',
+                    image: require('@/static/images/reviews/review4.jpg'),
+                    title: this.$t('reviews.title4'),
+                    text: this.$t('reviews.text4'),
+                    name: this.$t('reviews.name4')
+                },
+                {
+                    id: 5,
+                    img: 'review5.jpg',
+                    image: require('@/static/images/reviews/review5.jpeg'),
+                    title: this.$t('reviews.title5'),
+                    text: this.$t('reviews.text5'),
+                    name: this.$t('reviews.name5')
+                },
+                {
+                    id: 6,
+                    img: 'review6.jpg',
+                    image: require('@/static/images/reviews/review6.jpeg'),
+                    title: this.$t('reviews.title6'),
+                    text: this.$t('reviews.text6'),
+                    name: this.$t('reviews.name6')
+                },
+                {
+                    id: 7,
+                    img: 'review7.jpg',
+                    image: require('@/static/images/reviews/review7.jpeg'),
+                    title: this.$t('reviews.title7'),
+                    text: this.$t('reviews.text7'),
+                    name: this.$t('reviews.name7')
+                }
+            ]
+        }
+    }
 }
 </script>
 <style lang="sass" scoped>
@@ -110,6 +151,7 @@ export default {
     &__photo
         height: 18rem
         width: 18rem
+        object-fit: cover
         border-radius: 50%
         margin-right: 3.3rem
 

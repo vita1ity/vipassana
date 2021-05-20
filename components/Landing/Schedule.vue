@@ -138,6 +138,7 @@ export default {
         background-color: $color-white
         width: 2.4rem
         height: 2.4rem
+        flex: 0 0 auto
         border-radius: 50%
         z-index: 10
 

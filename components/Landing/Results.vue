@@ -1,5 +1,5 @@
 <template>
-     <div class="results jarallax">
+    <div class="results jarallax">
         
         <div class="results__left-box">
             <AsanaIcon class="results__icon"/>

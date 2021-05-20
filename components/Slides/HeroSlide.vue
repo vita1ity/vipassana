@@ -2,6 +2,7 @@
     <!-- <div class="slide" :style='cssProps'> -->
         
     <parallax class="slide agile__slide" :speed-factor=".3">
+    
         <img :src="require('@/static/images/hero/' + img)" 
             alt="Slide Background" 
             class="slide-background"
@@ -19,7 +20,7 @@
                 alt="Slide Background" 
                 class="slide-background"> -->
     </parallax> 
-        
+    
     <!-- <img :src="require('@/static/images/' + img)" alt="Slide Background" class="slide-background"> -->
     <!-- </div> -->
 </template>

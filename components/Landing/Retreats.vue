@@ -4,9 +4,10 @@
 
         <vueper-slides :parallax="true" 
                         :parallax-fixed-content="true" 
-                        :touchable="true" 
+                        :touchable="false" 
                         class="no-shadow" 
                         :transition-speed="700">
+     
             <template v-slot:arrow-left>
                 <ArrowLeft class=""/>
             </template>
@@ -57,23 +58,56 @@ export default {
                 {
                     img: 'retreat1.jpg',
                     title: this.$t('retreat1.title'),
-                    image: require('@/static/images/retreat/Karpaty3000.jpg'),
+                    image: require('@/static/images/retreat/retreat1.jpg'),
                     teacher1: this.$t('teacher.oleg'),
                     teacher2: this.$t('teacher.vika'),
-                    price4: "6900",
-                    price3: "7300",
-                    price2: "7900",
+                    price4: "5000",
+                    price3: "5000",
+                    price2: "5500",
                     comment: ""
 
                 },
                 {
                     title: this.$t('retreat2.title'),
-                    image: require('@/static/images/retreat/Sun3000.jpg'),
+                    image: require('@/static/images/retreat/retreat2.jpg'),
                     teacher1: this.$t('teacher.oleg'),
                     teacher2: this.$t('teacher.yana'),
-                    price4: "4100",
-                    price3: "4100",
-                    price2: "4600",
+                    price4: "7800",
+                    price3: "7800",
+                    price2: "8300",
+                    comment: ""
+                    //comment: this.$t('retreat2.comment')
+                },
+                {
+                    title: this.$t('retreat3.title'),
+                    image: require('@/static/images/retreat/retreat3.jpg'),
+                    teacher1: this.$t('teacher.oleg'),
+                    teacher2: this.$t('teacher.yana'),
+                    price4: "",
+                    price3: "",
+                    price2: "",
+                    comment: ""
+                    //comment: this.$t('retreat2.comment')
+                },
+                {
+                    title: this.$t('retreat4.title'),
+                    image: require('@/static/images/retreat/retreat4.jpg'),
+                    teacher1: this.$t('teacher.oleg'),
+                    teacher2: this.$t('teacher.yana'),
+                    price4: "",
+                    price3: "",
+                    price2: "",
+                    comment: ""
+                    //comment: this.$t('retreat2.comment')
+                },
+                {
+                    title: this.$t('retreat5.title'),
+                    image: require('@/static/images/retreat/retreat5.jpg'),
+                    teacher1: this.$t('teacher.oleg'),
+                    teacher2: this.$t('teacher.yana'),
+                    price4: "",
+                    price3: "",
+                    price2: "",
                     comment: ""
                     //comment: this.$t('retreat2.comment')
                 }
