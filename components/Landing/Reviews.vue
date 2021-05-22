@@ -12,8 +12,6 @@
                     :per-page="1" 
                     :mouse-drag="false" 
                     easing="ease"
-                    :adjustableHeight="true"
-                    adjustableHeightEasing="ease"
                     >
                     <slide class="carousel__slide" v-for="slide in slides" :key="slide.id">
                         <div class="review">
