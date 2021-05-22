@@ -15,7 +15,6 @@
                     :adjustableHeight="true"
                     adjustableHeightEasing="ease"
                     >
-                <client-only>
                     <slide class="carousel__slide" v-for="slide in slides" :key="slide.id">
                         <div class="review">
                             <img :src="slide.image" alt="" class="review__photo">
@@ -27,7 +26,6 @@
                             
                         </div>
                     </slide>
-                </client-only>
             </carousel>
         </client-only>
     </div>
