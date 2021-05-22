@@ -15,17 +15,19 @@
                     :adjustableHeight="true"
                     adjustableHeightEasing="ease"
                     >
-                <slide class="carousel__slide" v-for="slide in slides" :key="slide.id">
-                    <div class="review">
-                        <img :src="slide.image" alt="" class="review__photo">
-                        <div class="review__textbox">
-                            <h5 class="heading-fifth margin-bottom-smaller" v-html="slide.title"></h5>
-                            <p class="paragraph-primary margin-bottom-small" v-html="slide.text"></p>
-                            <span class="heading-secondary-smaller text-align-right">{{ slide.name }}</span>
+                <client-only>
+                    <slide class="carousel__slide" v-for="slide in slides" :key="slide.id">
+                        <div class="review">
+                            <img :src="slide.image" alt="" class="review__photo">
+                            <div class="review__textbox">
+                                <h5 class="heading-fifth margin-bottom-smaller" v-html="slide.title"></h5>
+                                <p class="paragraph-primary margin-bottom-small" v-html="slide.text"></p>
+                                <span class="heading-secondary-smaller text-align-right">{{ slide.name }}</span>
+                            </div>
+                            
                         </div>
-                        
-                    </div>
-                </slide>
+                    </slide>
+                </client-only>
             </carousel>
         </client-only>
     </div>
