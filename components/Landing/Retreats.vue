@@ -4,7 +4,7 @@
 
         <vueper-slides :parallax="true" 
                         :parallax-fixed-content="true" 
-                        :touchable="false" 
+                        :touchable="true" 
                         class="no-shadow" 
                         :transition-speed="700">
      
