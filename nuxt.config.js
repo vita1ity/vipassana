@@ -35,6 +35,7 @@ export default {
     { src: '~/plugins/jarallax.js', mode: 'client' },
     { src: '~/plugins/directives.js', mode: 'client' },
     { src: '~/plugins/parallax.js', mode: 'client' },
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' },
     
   ],
 
