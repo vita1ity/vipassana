@@ -7,7 +7,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="separator"></div>
-        <no-ssr>
+        <client-only>
             <carousel class="carousel" 
                     :per-page="1" 
                     :mouse-drag="false" 
@@ -27,7 +27,7 @@
                     </div>
                 </slide>
             </carousel>
-        </no-ssr>
+        </client-only>
     </div>
 </template>
 <script>
