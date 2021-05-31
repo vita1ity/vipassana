@@ -104,7 +104,7 @@ export default {
     
     background-size: cover
     background-position: top
-    background: linear-gradient(rgba($color-primary-darker, .75), rgba($color-primary-darker, .75))
+    background: linear-gradient(rgba($color-primary, .8), rgba($color-primary, .8))
     // background: linear-gradient(rgba($color-primary-darker, .75), rgba($color-primary-darker, .75)), var(--img-url)
     // background-size: cover
     // background-position: center
