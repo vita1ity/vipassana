@@ -130,12 +130,6 @@ export default {
     @include respond(tab-port)
         clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
 
-.slide-outer
-    
-    //background: linear-gradient(rgba($color-primary-darker, .75), rgba($color-primary-darker, .75)), url(~/static/images/retreat/retreat1.jpg)
-    //  background-size: cover
-    //  background-position: top
-    //  background: linear-gradient(rgba($color-primary-darker, .75), rgba($color-primary-darker, .75))
     
 
 </style>

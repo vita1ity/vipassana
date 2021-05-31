@@ -39,7 +39,7 @@ export default {
     data() {
         return {
             loaded: false,
-            color: '#5131EC'
+            color: '#5E62D0'
         }
     },
     computed: {
