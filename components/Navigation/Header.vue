@@ -307,10 +307,10 @@ export default {
     
     .mobile-menu
 
-        display: flex
+        display: none
         align-items: center
         justify-content: center
-        visibility: hidden
+        //visibility: hidden
         width: 4rem
         height: 4rem
         fill: rgba($color-white, .7)
@@ -319,7 +319,10 @@ export default {
         z-index: 10
 
         @include respond(tab-port) 
-            visibility: visible
+            //visibility: visible
+            display: flex
+            align-items: center
+            justify-content: center
 
         &:hover
             fill: $color-white
