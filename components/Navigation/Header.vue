@@ -227,7 +227,7 @@ export default {
         transition: .5s
         &__sticky
             //background-color: rgba($color-primary, .64)
-            background: linear-gradient( to right, rgba($color-primary-lighter, .7), rgba($color-primary, .7) 40%, rgba($color-primary-darker, .7)) 
+            background: linear-gradient( to right, rgba($color-header-1, .7), rgba($color-header-2, .7) 40%, rgba($color-header-3, .7)) 
             
             height: 8rem
             width: 100vw
@@ -301,7 +301,7 @@ export default {
             width: 100%
             display: flex
             flex-direction: column
-            background: linear-gradient( to right, rgba($color-primary-lighter, .9), rgba($color-primary, .9) 40%, rgba($color-primary-darker, .9)) 
+            background: linear-gradient( to right, rgba($color-header-1, .9), rgba($color-header-2, .9) 40%, rgba($color-header-3, .9)) 
             padding: 6rem 0 2rem 0
             z-index: 1
     

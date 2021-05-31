@@ -46,8 +46,8 @@ export default {
     grid-column: center-start / full-end
     position: relative
 
-    background-image: linear-gradient(rgba($color-primary-darker, .78), rgba($color-primary-darker, .78)), url(~/static/images/fog-1500.jpg)
-    //background: linear-gradient(rgba($color-primary-darker, .78), rgba($color-primary-darker, .78))
+    background-image: linear-gradient(rgba($color-primary, .8), rgba($color-primary, .8)), url(~/static/images/fog-1500.jpg)
+    
     background-size: cover
     background-position: center
 

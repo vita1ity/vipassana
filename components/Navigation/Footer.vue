@@ -123,7 +123,7 @@ export default {
 <style lang="sass" scoped>
 .footer
     //height: 50rem
-    background-color: rgba($color-primary-darker, .8)
+    background-color: rgba($color-primary, .9)
     width: 100%
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%)
     margin-top: -8rem
