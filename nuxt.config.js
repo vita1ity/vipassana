@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Віпассана. Медитація ретрит "Занурення у тишу"',
+    title: 'Випассана. Медитация ретрит "Погружение в тишину"',
     htmlAttrs: {
       lang: 'en'
     },
