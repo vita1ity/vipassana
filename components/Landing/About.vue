@@ -1,6 +1,7 @@
 <template>
     <div class="about">
-      <h3 class="heading-tertiary">{{ $t('about.title') }}</h3>
+      <h3 class="heading-tertiary">{{ $t('about.title1') }}</h3>
+      <h3 class="heading-tertiary">{{ $t('about.title2') }}</h3>
       <div class="separator"></div>
       <p class="paragraph-primary margin-bottom-medium" v-html="$t(
         'about.text1', {

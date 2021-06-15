@@ -11,10 +11,23 @@
             <form @submit.prevent="sendEmail" class="form" >
                 <div class="form__fields">
                     <div class="form__group form__group--name">
-                        <input type="text" name="name" id="name" v-model="name" class="form__input paragraph-primary" :placeholder="$t('contact.name')" required>
+                        <input type="text" 
+                                name="name" 
+                                id="name" 
+                                v-model="name" 
+                                class="form__input paragraph-primary" 
+                                :placeholder="$t('contact.name')" 
+                                required>
                     </div>
                     <div class="form__group form__group--phone">
-                        <input type="text" name="phone" id="phone" v-model="phone" class="form__input paragraph-primary" :placeholder="$t('contact.phone')" required>
+                        <input type="text" 
+                                name="phone" 
+                                id="phone" 
+                                v-model="phone" 
+                                @input="acceptNumber" 
+                                class="form__input paragraph-primary" 
+                                :placeholder="$t('contact.phone')" 
+                                required>
                     </div>
                     <div class="form__group form__group--gender">
                         <select name="gender" id="gender" v-model="gender" class="form__input form__input--select paragraph-primary" required>
@@ -27,8 +40,11 @@
                     <div class="form__group form__group--retreat">
                         <select name="retreat" id="retreat" v-model="retreat" class="form__input form__input--select paragraph-primary" required>
                             <option value="" disabled selected>{{$t('contact.retreat')}}</option>
-                            <option :value="$t('contact.retreat.first')">{{ $t('contact.retreat.first')}}</option>
-                            <option :value="$t('contact.retreat.second')">{{ $t('contact.retreat.second')}}</option>
+                            <option :value="$t('retreat1.title')">{{ $t('retreat1.title')}}</option>
+                            <option :value="$t('retreat2.title')">{{ $t('retreat2.title')}}</option>
+                            <option :value="$t('retreat3.title')">{{ $t('retreat3.title')}}</option>
+                            <option :value="$t('retreat4.title')">{{ $t('retreat4.title')}}</option>
+                            <option :value="$t('retreat5.title')">{{ $t('retreat5.title')}}</option>
                         </select>
                         <ArrowDown class="form__select-icon"/>
                     </div>
@@ -110,6 +126,10 @@ export default {
 
     },
     methods: {
+        acceptNumber() {
+            let x = this.phone.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+            this.phone = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        },
         sendEmail(e) {
             console.log('sendRequest')
              

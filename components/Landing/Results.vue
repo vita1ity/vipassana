@@ -11,6 +11,7 @@
                 <li class="results__list-item paragraph-primary--white">{{ $t('results.text4') }}</li>
                 <li class="results__list-item paragraph-primary--white">{{ $t('results.text5') }}</li>
                 <li class="results__list-item paragraph-primary--white">{{ $t('results.text6') }}</li>
+                <li class="results__list-item paragraph-primary--white">{{ $t('results.text7') }}</li>
             </ul>
 
         </div>
@@ -21,6 +22,7 @@
                 <li class="results__list-item paragraph-primary--white">{{ $t('results.practice2') }}</li>
                 <li class="results__list-item paragraph-primary--white">{{ $t('results.practice3') }}</li>
                 <li class="results__list-item paragraph-primary--white">{{ $t('results.practice4') }}</li>
+                <li class="results__list-item paragraph-primary--white">{{ $t('results.practice5') }}</li>
             </ul>
         </div>
         
@@ -110,14 +112,16 @@ export default {
         width: auto
         margin-bottom: 5rem
     &__list
-        list-style-position: inside
-
+        list-style-position: outside
+        
         &--no-points
             list-style-type: none
 
     &__list-item
-        line-height: 3rem
-
-
+        line-height: 2.5rem
+        text-align: left
+        
+        &:not(:last-child)
+            margin-bottom: 1.2rem
         
 </style>
