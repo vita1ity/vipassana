@@ -44,7 +44,6 @@
                             <option :value="$t('retreat2.title')">{{ $t('retreat2.title')}}</option>
                             <option :value="$t('retreat3.title')">{{ $t('retreat3.title')}}</option>
                             <option :value="$t('retreat4.title')">{{ $t('retreat4.title')}}</option>
-                            <option :value="$t('retreat5.title')">{{ $t('retreat5.title')}}</option>
                         </select>
                         <ArrowDown class="form__select-icon"/>
                     </div>

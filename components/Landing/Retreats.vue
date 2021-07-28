@@ -55,20 +55,9 @@ export default {
     data() {
         return {
             slides: [
+               
                 {
-                    img: 'retreat1.jpg',
                     title: this.$t('retreat1.title'),
-                    image: require('@/static/images/retreat/retreat1.jpg'),
-                    teacher1: this.$t('teacher.oleg'),
-                    teacher2: this.$t('teacher.vika'),
-                    price4: "5000",
-                    price3: "5000",
-                    price2: "5500",
-                    comment: ""
-
-                },
-                {
-                    title: this.$t('retreat2.title'),
                     image: require('@/static/images/retreat/retreat2.jpg'),
                     teacher1: this.$t('teacher.oleg'),
                     teacher2: this.$t('teacher.yana'),
@@ -79,18 +68,18 @@ export default {
                     //comment: this.$t('retreat2.comment')
                 },
                 {
-                    title: this.$t('retreat3.title'),
+                    title: this.$t('retreat2.title'),
                     image: require('@/static/images/retreat/retreat3.jpg'),
                     teacher1: this.$t('teacher.oleg'),
-                    teacher2: this.$t('teacher.yana'),
-                    price4: "",
-                    price3: "",
-                    price2: "",
+                    teacher2: this.$t('teacher.vika'),
+                    price4: "10000",
+                    price3: "10000",
+                    price2: "10800",
                     comment: ""
                     //comment: this.$t('retreat2.comment')
                 },
                 {
-                    title: this.$t('retreat4.title'),
+                    title: this.$t('retreat3.title'),
                     image: require('@/static/images/retreat/retreat4.jpg'),
                     teacher1: this.$t('teacher.oleg'),
                     teacher2: this.$t('teacher.yana'),
@@ -101,7 +90,7 @@ export default {
                     //comment: this.$t('retreat2.comment')
                 },
                 {
-                    title: this.$t('retreat5.title'),
+                    title: this.$t('retreat4.title'),
                     image: require('@/static/images/retreat/retreat5.jpg'),
                     teacher1: this.$t('teacher.oleg'),
                     teacher2: this.$t('teacher.yana'),
