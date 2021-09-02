@@ -56,17 +56,17 @@ export default {
         return {
             slides: [
                
-                {
-                    title: this.$t('retreat1.title'),
-                    image: require('@/static/images/retreat/retreat2.jpg'),
-                    teacher1: this.$t('teacher.oleg'),
-                    teacher2: this.$t('teacher.yana'),
-                    price4: "7800",
-                    price3: "7800",
-                    price2: "8300",
-                    comment: ""
-                    //comment: this.$t('retreat2.comment')
-                },
+                // {
+                //     title: this.$t('retreat1.title'),
+                //     image: require('@/static/images/retreat/retreat2.jpg'),
+                //     teacher1: this.$t('teacher.oleg'),
+                //     teacher2: this.$t('teacher.yana'),
+                //     price4: "7800",
+                //     price3: "7800",
+                //     price2: "8300",
+                //     comment: ""
+                //     //comment: this.$t('retreat2.comment')
+                // },
                 {
                     title: this.$t('retreat2.title'),
                     image: require('@/static/images/retreat/retreat3.jpg'),
