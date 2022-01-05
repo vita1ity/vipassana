@@ -12,8 +12,7 @@
                             'teacher2': '<a class=\'text-link\' href=\'#\'>' + teacher2 + '</a>',
                         })"
                     > 
-                        <!-- {{ $t('retreat.teachers', { teacher1: teacher1, teacher2: teacher2}) }} -->
-                    </p>
+                    </p> 
                     <h4 class="heading-fourth--white margin-bottom-smaller">
                         {{ $t('retreat.priceIncludes') }}
                     </h4>
