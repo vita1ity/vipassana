@@ -40,10 +40,11 @@
                     <div class="form__group form__group--retreat">
                         <select name="retreat" id="retreat" v-model="retreat" class="form__input form__input--select paragraph-primary" required>
                             <option value="" disabled selected>{{$t('contact.retreat')}}</option>
-                            <!-- <option :value="$t('retreat3.title')">{{ $t('retreat3.title')}}</option> -->
+                            
                             <!-- <option :value="$t('retreat4.title')">{{ $t('retreat4.title')}}</option> -->
                             <option :value="$t('retreat1.title')">{{ $t('retreat1.title')}}</option>
                             <option :value="$t('retreat2.title')">{{ $t('retreat2.title')}}</option>
+                            <option :value="$t('retreat3.title')">{{ $t('retreat3.title')}}</option>
                         </select>
                         <ArrowDown class="form__select-icon"/>
                     </div>

@@ -88,17 +88,17 @@ export default {
                     comment: ""
                     //comment: this.$t('retreat2.comment')
                 },
-                // {
-                //     title: this.$t('retreat3.title'),
-                //     image: require('@/static/images/retreat/retreat4.jpg'),
-                //     teacher1: this.$t('teacher.oleg'),
-                //     teacher2: this.$t('teacher.yana'),
-                //     price4: "6000",
-                //     price3: "6000",
-                //     price2: "6500",
-                //     comment: ""
-                //     //comment: this.$t('retreat2.comment')
-                // },
+                {
+                    title: this.$t('retreat3.title'),
+                    image: require('@/static/images/retreat/april2022.jpg'),
+                    teacher1: this.$t('teacher.oleg'),
+                    teacher2: this.$t('teacher.vika'),
+                    price4: "6000",
+                    price3: "6000",
+                    price2: "6500",
+                    comment: ""
+                    //comment: this.$t('retreat2.comment')
+                },
                 
             ]
         }
