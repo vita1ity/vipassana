@@ -7,6 +7,8 @@
     
     <About id="about"/>
 
+    <YearlySchedule id="yearlySchedule"/>
+
     <Retreats id="events"/>
 
     <div class="grid--gradient">
@@ -39,6 +41,7 @@
 
 import HeroArea from "@/components/Landing/HeroArea"
 import About from "@/components/Landing/About"
+import YearlySchedule from "@/components/Landing/YearlySchedule"
 import Retreats from "@/components/Landing/Retreats"
 import Techniques from "@/components/Landing/Techniques"
 import Schedule from "@/components/Landing/Schedule"
@@ -56,6 +59,7 @@ export default {
   components: { 
     HeroArea,
     About,
+    YearlySchedule,
     Retreats,
     Techniques,
     Schedule,

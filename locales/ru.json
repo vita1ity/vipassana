@@ -17,10 +17,24 @@
     "about.text2": "Во время ретритов мы используем вариант, когда участники, кроме статического сидения во время {concentration} и динамического хождения, практикуют, по желанию, {asana} хатха-йоги.",
     "about.text3": "Как показывает опыт, это весьма позитивно влияет как на последующие двухчасовые практики {concentration}, так и на физическое состояние тела.",
 
+    "retreat.schedule.title": "Расписание ретритов на 2022 год",
+
+    "retreat.schedule.date1": "4 - 13 марта 2022",
+    "retreat.schedule.date2": "22 - 26 апреля 2022",
+    "retreat.schedule.date3": "29 апреля - 8 мая 2022",
+    "retreat.schedule.date4": "1 - 7 июня 2022",
+    "retreat.schedule.date5": "21 - 25 сентября 2022",
+    "retreat.schedule.date6": "14 - 23 октября 2022",
+    "retreat.schedule.date7": "1 - 5 декабря 2022",
+
+    "retreat.location1": "Карпаты, Славское, Сreative Residence MC 6",
+    "retreat.location2": "Киевская область, Саварка, SFC_Myshugy",
+    "retreat.location3": "Карпаты, Подобовец, \"Справжня Казка\"",
+
     "retreat1.title": "7-11 февраля, Карпаты, Славское, Сreative Residence MC 6",
     "retreat2.title": "4-13 марта, Карпаты, Славское, Сreative Residence MC 6",
     "retreat3.title": "22-26 апреля, Карпаты, Славское, Сreative Residence MC 6",
-    "retreat4.title": "1-5 декабря, Киевская область, Саварка, SFC_Myshugy",
+    "retreat4.title": "29 апреля - 8 мая, Карпаты, Подобовец, \"Справжня Казка\"",
     
     "retreat.teachers": "Ретрит проводят сертифицированные преподаватели клуба OUM.RU и Клуба йоги и саморазвития в Киеве Клуб Oum Kiev {teacher1} и {teacher2}.",
     "retreat.priceIncludes": "В стоймость входят",

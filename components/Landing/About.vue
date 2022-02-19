@@ -22,7 +22,6 @@
     </div>
 </template>
 <script>
-import { techniquesUrl } from '@/common/vars'
 export default {
     
 }

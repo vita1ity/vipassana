@@ -55,28 +55,18 @@ export default {
     data() {
         return {
             slides: [
-            //    {
-            //         title: this.$t('retreat4.title'),
-            //         image: require('@/static/images/retreat/retreat5.jpg'),
-            //         teacher1: this.$t('teacher.oleg'),
-            //         teacher2: this.$t('teacher.yana'),
-            //         price4: "10000",
-            //         price3: "10000",
-            //         price2: "10800",
-            //         comment: ""
-            //         //comment: this.$t('retreat2.comment')
-            //     },
-                {
-                    title: this.$t('retreat1.title'),
-                    image: require('@/static/images/retreat/retreat6.jpg'),
-                    teacher1: this.$t('teacher.oleg'),
-                    teacher2: this.$t('teacher.yana'),
-                    price4: "6000",
-                    price3: "6000",
-                    price2: "6500",
-                    comment: ""
-                    //comment: this.$t('retreat2.comment')
-                },
+            
+                // {
+                //     title: this.$t('retreat1.title'),
+                //     image: require('@/static/images/retreat/retreat6.jpg'),
+                //     teacher1: this.$t('teacher.oleg'),
+                //     teacher2: this.$t('teacher.yana'),
+                //     price4: "6000",
+                //     price3: "6000",
+                //     price2: "6500",
+                //     comment: ""
+                //     //comment: this.$t('retreat2.comment')
+                // },
                 {
                     title: this.$t('retreat2.title'),
                     image: require('@/static/images/retreat/retreat7.jpg'),
@@ -96,6 +86,17 @@ export default {
                     price4: "6000",
                     price3: "6000",
                     price2: "6500",
+                    comment: ""
+                    //comment: this.$t('retreat2.comment')
+                },
+                   {
+                    title: this.$t('retreat4.title'),
+                    image: require('@/static/images/retreat/may-2022.jpg'),
+                    teacher1: this.$t('teacher.oleg'),
+                    teacher2: this.$t('teacher.vika'),
+                    price4: "10000",
+                    price3: "10000",
+                    price2: "10500",
                     comment: ""
                     //comment: this.$t('retreat2.comment')
                 },
